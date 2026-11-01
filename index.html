@@ -645,7 +645,7 @@
 
   // Routes not wired yet open a "still building" note instead of a dead link.
   // When a site goes live, remove its host here (or the data-soon attribute on the link).
-  const BUILDING = { "explore.lifeworkgps.tech": "Explore", "mentor.lifeworkgps.tech": "Mentors" };
+  const BUILDING = { "explore.lifeworkgps.tech": "Explore" };
   const soon = document.getElementById("soon");
   document.addEventListener("click", e => {
     const a = e.target.closest("a"); if (!a) return;
