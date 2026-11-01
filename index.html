@@ -105,11 +105,26 @@
   /* N and S sit in the compass column but are wider than it; they overflow evenly into the gaps */
   .dest.n,.dest.s{width:330px; max-width:none}
   /* Northwest: partner (VetNav), between Outfitters and Explore */
-  .dest.vn{grid-area:vn; justify-self:start; align-self:start; width:min(300px, calc(100% - 36px));
-    background:linear-gradient(160deg, rgba(14,66,98,.94), rgba(4,38,56,.94)); border:1px solid rgba(123,189,242,.45)}
-  .dest.vn .badge,.row.vn .badge{font-size:10.5px; background:var(--sky); color:var(--navy); border-color:var(--sky)}
-  .partner{margin-left:auto; padding:2px 8px; border-radius:999px; font-size:9.5px; letter-spacing:.12em; background:rgba(123,189,242,.18); color:var(--sky)}
-  .row.vn{border-color:rgba(123,189,242,.45); background:linear-gradient(160deg, rgba(14,66,98,.94), rgba(4,38,56,.94))}
+  .dest.vn{grid-area:vn; justify-self:start; align-self:start; width:min(300px, calc(100% - 36px))}
+  /* .ally = partner routes off the cardinal points: warm amber (blue's complement), dashed edge, so they read
+     as connected to LifeWork but not part of its core delivery */
+  .ally{--ally:#e8a95c; --ally-deep:#c98a3e}
+  .dest.ally,.row.ally{border:1px dashed rgba(232,169,92,.6);
+    background:linear-gradient(160deg, rgba(66,45,20,.94), rgba(30,25,20,.94))}
+  .dest.ally:hover,.dest.ally:focus-within{border-color:var(--ally); box-shadow:0 22px 44px -24px rgba(232,169,92,.55)}
+  .ally .badge{font-size:10.5px; background:var(--ally); color:#2a1a08; border-color:var(--ally)}
+  .ally .k,.ally .pair{color:#d9bf9c}
+  .ally .pair{border-top-color:rgba(232,169,92,.28)}
+  .ally .pair b{color:#f6e3c8}
+  .ally .q,.row.ally .t span{color:#e6d3b8}
+  .ally .go{background:var(--ally); color:#2a1a08}
+  .ally .go:hover{background:var(--ally-deep)}
+  .ally .info{border-color:var(--ally); color:var(--ally)}
+  .ally .info:hover,.ally .info:focus-visible{background:var(--ally); color:#2a1a08}
+  .ally .chev{color:var(--ally)}
+  .partner{margin-left:auto; padding:2px 8px; border-radius:999px; font-size:9.5px; letter-spacing:.12em; background:rgba(232,169,92,.2); color:var(--ally)}
+  .routes line.rnw{stroke:rgba(232,169,92,.35)}
+  .gps[data-dir="nw"] .routes .rnw{stroke:#e8a95c}
   .dest .k{display:flex; align-items:center; gap:9px; font-size:11px; font-weight:800; letter-spacing:.14em; text-transform:uppercase; color:var(--scr-muted)}
   .badge{flex:none; width:26px; height:26px; border-radius:8px; display:grid; place-items:center; font-size:13px; font-weight:900; letter-spacing:0;
     background:rgba(54,134,199,.25); color:var(--sky); border:1px solid rgba(123,189,242,.35)}
@@ -195,6 +210,11 @@
   .band p b{color:var(--ink)}
   .band-go{flex:none; padding:12px 20px; border-radius:11px; background:var(--blue); color:#fff; font-weight:800; font-size:14px; text-decoration:none}
   .band-go:hover{background:var(--blue-700)}
+  .band.ally{border:1px dashed #e8a95c; background:color-mix(in srgb, #e8a95c 9%, var(--card))}
+  .band.ally .badge{width:44px; height:44px; font-size:14px; background:#e8a95c; color:#2a1a08}
+  .band.ally .kicker,.band.ally .two-sides{color:#b8762c}
+  .band.ally .band-go{background:#e8a95c; color:#2a1a08}
+  .band.ally .band-go:hover{background:#c98a3e}
   @media (max-width:640px){ .band{flex-direction:column; align-items:flex-start} }
 
   footer{background:var(--navy-3); color:#9fc2db; margin-top:66px}
@@ -317,7 +337,7 @@
         </article>
 
         <!-- NORTHWEST · VetNav (partner; eligibility: be military-connected, or serve those who are) -->
-        <article class="dest vn" data-dir="nw" data-name="NW · VetNav (partner)">
+        <article class="dest vn ally" data-dir="nw" data-name="NW · VetNav (partner)">
           <div class="k"><span class="badge">NW</span> Northwest <span class="partner">Partner</span></div>
           <div class="ind">
             <h3>Veteran resources</h3>
@@ -456,7 +476,7 @@
           <a class="row" href="https://mentor.lifeworkgps.tech/#get-coaching"><span class="badge">S</span>
             <span class="t"><b>I need a guide</b><span>I'm looking for a mentor.</span></span><span class="chev">›</span></a>
           <div class="row-wrap">
-            <a class="row vn" href="https://www.vetnav.org" target="_blank" rel="noopener"><span class="badge">NW</span>
+            <a class="row vn ally" href="https://www.vetnav.org" target="_blank" rel="noopener"><span class="badge">NW</span>
               <span class="t"><b>Veteran resources · VetNav</b><span>I'm a veteran, service member or military family. Partner site.</span></span><span class="chev">↗</span></a>
             <button class="info" type="button" data-vetnav aria-label="About VetNav and who can use it">i</button>
           </div>
@@ -480,7 +500,7 @@
               <span class="t"><b>List your services</b><span>With the outfitter tools in LifeWork GPS.</span></span><span class="chev">›</span></a>
             <a class="row" data-route="mentor" href="https://mentor.lifeworkgps.tech/#become-a-coach"><span class="badge">S</span>
               <span class="t"><b>Mentor on LifeWork</b><span>Set up your mentoring practice.</span></span><span class="chev">›</span></a>
-            <a class="row vn" data-route="vets" href="https://www.vetnav.org" target="_blank" rel="noopener"><span class="badge">NW</span>
+            <a class="row vn ally" data-route="vets" href="https://www.vetnav.org" target="_blank" rel="noopener"><span class="badge">NW</span>
               <span class="t"><b>Join VetNav as a provider</b><span>Partner site · for organizations serving the military community.</span></span><span class="chev">↗</span></a>
           </div>
         </div>
@@ -514,7 +534,7 @@
           <div class="two-sides">You ⇄ mentors</div></div>
       </div>
 
-      <div class="band">
+      <div class="band ally">
         <span class="badge">NW</span>
         <div class="band-t">
           <div class="kicker">Partner · Northwest</div>
