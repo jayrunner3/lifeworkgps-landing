@@ -421,7 +421,9 @@ dialog::backdrop{background:rgba(1,20,32,.72)}
 <details id="test-first"><summary>Can I test it before committing?</summary><p>Yes. Request a consult and a customer care teammate will walk you through options for trying LifeWork with your team first.</p>
 <div class="consult"><button class="btn btn-primary" type="button" data-consult="test">Request a Consult</button></div>
 </details>
-<details><summary>Do you support evergreen roles?</summary><p>Yes. Evergreen roles are the ones you are always hiring for, where you keep a pipeline of candidates warm instead of paying per hire. They are set up with a customer success teammate, so reach out and we will walk you through it.</p></details>
+<details><summary>Do you support evergreen roles?</summary><p>Yes. Evergreen roles are the ones you are always hiring for, where you keep a pipeline of candidates warm instead of paying per hire. They are set up with a customer success teammate, so reach out and we will walk you through it.</p>
+<div class="consult"><button class="btn btn-primary" type="button" data-consult="evergreen">Request a Consult</button></div>
+</details>
 </div>
 <p class="fine" style="font-size:15px">Not sure which plan fits? <button type="button" class="textlink" data-consult="notsure">Talk to a customer success teammate</button> to find options that work for your team, or email sales@lifework.live.</p>
 </div>
@@ -571,7 +573,7 @@ dialog::backdrop{background:rgba(1,20,32,.72)}
 
   /* ---------- consult request (HubSpot) ---------- */
   var form=document.getElementById('consult-form'),status=document.getElementById('consult-status'),consultSource='';
-  var SOURCES={founders:"Founder's Plan",pilot:'Pilot Plan',hiring:'Hiring Plan',single:'Single Role',test:'Test before committing',notsure:'Not sure which plan'};
+  var SOURCES={founders:"Founder's Plan",pilot:'Pilot Plan',hiring:'Hiring Plan',single:'Single Role',test:'Test before committing',evergreen:'Evergreen roles',notsure:'Not sure which plan'};
   function openConsult(src){
     consultSource=SOURCES[src]||'General';status.textContent='';
     var btn=form.querySelector('button[type=submit]');btn.hidden=false;btn.disabled=false;
