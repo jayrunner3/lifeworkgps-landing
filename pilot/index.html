@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Pilot Pricing | LifeWork</title>
+<meta name="description" content="LifeWork pilot pricing for employers. Unlimited job postings on every paid plan. Pilot pricing is good through December 31, 2026.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap">
+<style>
+:root{--navy:#013a56;--blue:#3686c7;--orange:#ec2227;--dark-gray:#58595b;--light-gray:#d1d3d4;--white:#fff;--soft-white:#f6f9fb;--ink-soft:rgba(1,58,86,.8);--on-dark-soft:rgba(255,255,255,.84)}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+html{scroll-behavior:smooth;scroll-padding-top:96px}
+body{margin:0;font-family:Montserrat,"Helvetica Neue",Arial,sans-serif;background:var(--navy);color:var(--white);-webkit-font-smoothing:antialiased}
+h1,h2,h3,p{margin:0}
+a{color:inherit}
+:focus-visible{outline:3px solid #7fc0f5;outline-offset:3px;border-radius:6px}
+.wrap{max-width:1240px;margin:0 auto}
+.section{padding:clamp(64px,8vw,112px) clamp(20px,5vw,72px)}
+.dark{background:radial-gradient(circle at 14% 20%,rgba(54,134,199,.2),transparent 28%),linear-gradient(145deg,#012f46,#011f30)}
+.light{background:var(--soft-white);color:var(--navy)}
+.white{background:#fff;color:var(--navy)}
+.eyebrow{display:inline-flex;align-items:center;gap:10px;font-size:13px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;margin-bottom:18px;color:rgba(255,255,255,.82)}
+.eyebrow::before{content:"";width:44px;height:3px;background:var(--blue);border-radius:999px}
+.light .eyebrow,.white .eyebrow{color:rgba(1,58,86,.82)}
+h2{font-size:clamp(32px,5vw,52px);line-height:1.05;letter-spacing:-.04em;font-weight:700;max-width:860px}
+.lede{margin-top:18px;max-width:740px;font-size:16px;line-height:1.72;color:var(--on-dark-soft)}
+.light .lede,.white .lede{color:var(--ink-soft)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:48px;padding:12px 24px;border-radius:999px;font-family:inherit;font-size:16px;font-weight:600;text-decoration:none;cursor:pointer;border:none;transition:transform .18s,box-shadow .18s,background .18s}
+.btn:hover{transform:translateY(-2px)}
+.btn-primary{background:linear-gradient(135deg,#2a6fa8,#3686c7);color:#fff;box-shadow:0 14px 34px rgba(54,134,199,.34)}
+.btn-primary:hover{box-shadow:0 18px 40px rgba(54,134,199,.5)}
+.btn-ghost{background:rgba(255,255,255,.08);color:#fff;border:1px solid rgba(255,255,255,.28)}
+.btn-ghost:hover{background:rgba(255,255,255,.16)}
+.btn-outline{background:#fff;color:var(--navy);border:1px solid rgba(1,58,86,.45)}
+.btn-outline:hover{background:rgba(54,134,199,.1)}
+
+/* nav */
+.nav-shell{position:sticky;top:0;z-index:50;padding:14px clamp(12px,4vw,72px) 0}
+.nav{max-width:1020px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:16px 24px;padding:10px 12px 10px 22px;background:rgba(3,24,36,.86);backdrop-filter:blur(16px);border:1px solid rgba(255,255,255,.16);border-radius:36px;box-shadow:0 18px 54px rgba(0,0,0,.18)}
+.logo{display:flex;align-items:center;text-decoration:none}
+.logo img{display:block;width:clamp(140px,16vw,190px);height:auto}
+.logo-fallback{display:flex;align-items:center;justify-content:center;width:150px;height:44px;border:1px dashed rgba(255,255,255,.5);border-radius:8px;font-size:11px;font-weight:500;color:rgba(255,255,255,.82)}
+.nav-links{display:flex;align-items:center;gap:8px 26px}
+.nav-links a:not(.btn){color:rgba(255,255,255,.86);text-decoration:none;font-size:14px;font-weight:500;padding:12px 0}
+.nav-links a:not(.btn):hover{color:#fff}
+.nav-links .btn{min-height:44px;padding:10px 18px;font-size:14px}
+.nav-toggle{display:none;width:44px;height:44px;border-radius:999px;border:1px solid rgba(255,255,255,.28);background:rgba(255,255,255,.08);cursor:pointer;align-items:center;justify-content:center;flex-direction:column;gap:5px}
+.nav-toggle span{display:block;width:18px;height:2px;background:#fff;border-radius:2px}
+@media (max-width:860px){
+ .nav{flex-wrap:wrap;border-radius:28px}
+ .nav-toggle{display:flex}
+ .nav-links{display:none;flex-basis:100%;flex-direction:column;align-items:stretch;gap:0;padding:6px 6px 10px}
+ .nav-links.open{display:flex}
+ .nav-links .btn{margin-top:8px}
+}
+
+/* hero */
+.hero{padding-top:clamp(40px,6vw,72px);padding-bottom:clamp(56px,7vw,88px)}
+.hero-grid{display:flex;flex-wrap:wrap;align-items:center;gap:48px 64px}
+.hero-copy{flex:999 1 520px;min-width:0}
+h1{font-size:clamp(40px,5.2vw,64px);line-height:.98;font-weight:700;letter-spacing:-.02em}
+.hero-copy .lede{font-size:18px;line-height:1.65;max-width:620px;margin-top:24px}
+.signals{list-style:none;margin:24px 0 0;padding:0;display:flex;flex-wrap:wrap;gap:10px 22px;font-size:14px;font-weight:600;color:rgba(255,255,255,.9)}
+.signals li{display:flex;align-items:center;gap:8px}
+.signals li::before{content:"";width:6px;height:6px;border-radius:999px;background:var(--blue)}
+.cta-row{margin-top:32px;display:flex;flex-wrap:wrap;gap:12px}
+.deadline{flex:1 1 340px;min-width:0;padding:28px;border-radius:24px;background:rgba(3,24,36,.72);border:1px solid rgba(255,255,255,.16);box-shadow:0 18px 54px rgba(0,0,0,.18)}
+.tag{display:flex;align-items:center;gap:10px;font-size:13px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:rgba(255,255,255,.84)}
+.dot{width:10px;height:10px;border-radius:999px;background:var(--orange);box-shadow:0 0 0 3px #fff;flex:none}
+.deadline .big{margin-top:18px;font-size:26px;line-height:1.2;font-weight:700}
+.deadline p.small{margin-top:14px;font-size:15px;line-height:1.65;color:rgba(255,255,255,.84)}
+.days{margin-top:16px;display:inline-block;padding:8px 14px;border-radius:999px;background:rgba(54,134,199,.22);border:1px solid rgba(127,192,245,.5);font-size:14px;font-weight:600}
+.spots{margin-top:20px;padding-top:20px;border-top:1px solid rgba(255,255,255,.16);display:flex;gap:28px}
+.spots b{display:block;font-size:30px;line-height:1}
+.spots span{display:block;margin-top:6px;font-size:13px;line-height:1.4;color:rgba(255,255,255,.84)}
+
+/* included strip */
+.included{margin-top:40px;padding:22px 26px;border-radius:24px;background:#fff;border:1px solid rgba(1,58,86,.1);box-shadow:0 18px 46px rgba(1,58,86,.08);display:flex;flex-wrap:wrap;align-items:center;gap:14px 32px}
+.included strong{font-size:17px}
+.included ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:10px 24px;font-size:15px;font-weight:500;color:rgba(1,58,86,.9)}
+.check{display:flex;gap:10px;align-items:flex-start}
+.check svg{flex:none;margin-top:2px}
+
+/* cards */
+.grid{margin-top:24px;display:flex;flex-wrap:wrap;gap:24px;align-items:stretch}
+.card{flex:1 1 380px;min-width:0;padding:34px;border-radius:24px;background:#fff;color:var(--navy);border:1px solid rgba(1,58,86,.1);box-shadow:0 18px 46px rgba(1,58,86,.08);display:flex;flex-direction:column;transition:transform .18s,box-shadow .18s,outline-color .18s;outline:3px solid transparent;outline-offset:4px;scroll-margin-top:110px}
+.card:hover{transform:translateY(-3px);box-shadow:0 24px 56px rgba(1,58,86,.14)}
+.card.picked{outline-color:var(--blue)}
+.card.feature{background:linear-gradient(145deg,#012f46,#011f30);color:#fff;border-color:transparent;box-shadow:0 18px 46px rgba(1,58,86,.22)}
+.badge{align-self:flex-start;display:flex;align-items:center;gap:10px;padding:8px 14px;border-radius:999px;background:rgba(54,134,199,.12);font-size:13px;font-weight:600}
+.badge i{width:8px;height:8px;border-radius:999px;background:var(--orange);flex:none}
+.feature .badge{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.28)}
+.feature .badge i{box-shadow:0 0 0 2px #fff}
+.badge.quiet i{background:var(--blue)}
+.card h3{margin-top:20px;font-size:27px;font-weight:700}
+.card .for{margin-top:8px;font-size:15px;line-height:1.6;color:var(--ink-soft)}
+.feature .for{color:rgba(255,255,255,.84)}
+.price{margin-top:22px;display:flex;align-items:baseline;flex-wrap:wrap;gap:4px 8px}
+.price b{font-size:60px;line-height:1;letter-spacing:-.03em}
+.price.sm b{font-size:44px}
+.price span{font-size:16px;font-weight:500;color:var(--ink-soft)}
+.feature .price span{color:rgba(255,255,255,.84)}
+.hire{margin-top:18px;padding:14px 16px;border-radius:16px;background:rgba(54,134,199,.1);font-size:15px;line-height:1.5}
+.hire small{display:block;font-size:12px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;margin-bottom:4px;color:var(--ink-soft)}
+.feature .hire{background:rgba(255,255,255,.08)}
+.feature .hire small{color:rgba(255,255,255,.84)}
+.list{list-style:none;margin:22px 0 0;padding:0;display:flex;flex-direction:column;gap:12px;font-size:15px;line-height:1.5;color:rgba(1,58,86,.9)}
+.feature .list{color:rgba(255,255,255,.92)}
+.terms{margin-top:20px;font-size:13px;line-height:1.6;color:var(--ink-soft)}
+.feature .terms{color:rgba(255,255,255,.8)}
+.actions{margin-top:auto;padding-top:26px;display:flex;flex-wrap:wrap;gap:12px}
+.actions .btn{flex:1 1 170px}
+.mail{margin-top:12px;font-size:13px;color:var(--ink-soft)}
+.feature .mail{color:rgba(255,255,255,.8)}
+.fine{margin-top:28px;font-size:13px;line-height:1.6;color:var(--ink-soft)}
+
+/* table */
+.table-box{margin-top:40px;overflow-x:auto;border-radius:24px;background:#fff;border:1px solid rgba(1,58,86,.1);box-shadow:0 18px 46px rgba(1,58,86,.08)}
+table{width:100%;min-width:780px;border-collapse:collapse;font-size:15px;line-height:1.5;text-align:left}
+th,td{padding:20px 26px;border-bottom:1px solid rgba(1,58,86,.12);vertical-align:top}
+tbody tr:last-child th,tbody tr:last-child td{border-bottom:none}
+thead th{font-size:13px;letter-spacing:.08em;text-transform:uppercase;font-weight:600;color:rgba(1,58,86,.82)}
+tbody th{font-size:17px;font-weight:700}
+tbody th small,td small{display:block;margin-top:4px;font-size:13px;font-weight:500;color:var(--ink-soft)}
+td.strong{font-weight:700;font-size:17px}
+tr.list-row{background:rgba(54,134,199,.07)}
+
+/* evergreen */
+.split{display:flex;flex-wrap:wrap;gap:40px 72px;align-items:flex-start}
+.split>div{flex:1 1 420px;min-width:0}
+.rows>div{padding:24px 0;border-bottom:1px solid rgba(255,255,255,.14)}
+.rows>div:first-child{padding-top:0}
+.rows>div:last-child{border-bottom:none;padding-bottom:0}
+.rows h3{font-size:21px;font-weight:700}
+.rows p{margin-top:8px;font-size:15px;line-height:1.65;color:rgba(255,255,255,.84)}
+.chips{list-style:none;margin:22px 0 0;padding:0;display:flex;flex-wrap:wrap;gap:10px}
+.chips li{padding:8px 14px;border-radius:999px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.22);font-size:14px;font-weight:500}
+
+/* not sure */
+.help{border-radius:28px;padding:clamp(28px,4vw,48px);background:linear-gradient(145deg,#012f46,#011f30);color:#fff;display:flex;flex-wrap:wrap;gap:36px 56px;align-items:center}
+.help>div{flex:1 1 380px;min-width:0}
+.help h2{font-size:clamp(28px,4vw,42px)}
+.picker{display:flex;flex-direction:column;gap:10px}
+.picker p{font-size:13px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:rgba(255,255,255,.84);margin-bottom:4px}
+.pick{display:flex;justify-content:space-between;align-items:center;gap:12px;text-align:left;min-height:52px;padding:12px 18px;border-radius:16px;font-family:inherit;font-size:15px;font-weight:600;color:#fff;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.24);cursor:pointer;transition:background .18s}
+.pick:hover{background:rgba(255,255,255,.16)}
+.pick span{font-weight:500;font-size:13px;color:rgba(255,255,255,.84);white-space:nowrap}
+
+/* steps + faq */
+.steps{margin-top:40px;display:flex;flex-wrap:wrap;gap:20px}
+.step{flex:1 1 280px;min-width:0;padding:28px;border-radius:24px;background:var(--soft-white);border:1px solid rgba(1,58,86,.1)}
+.num{width:42px;height:42px;display:grid;place-items:center;border-radius:999px;background:var(--navy);color:#fff;font-weight:700;margin-bottom:18px}
+.step h3{font-size:24px;font-weight:700}
+.step p{margin-top:8px;font-size:15px;line-height:1.62;color:var(--ink-soft)}
+.faq{margin-top:40px;display:flex;flex-direction:column;gap:12px;max-width:920px}
+details{border-radius:20px;background:#fff;border:1px solid rgba(1,58,86,.1)}
+summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:16px;padding:22px 26px;font-size:18px;font-weight:700;border-radius:20px}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"";flex:none;width:10px;height:10px;border-right:2.5px solid var(--blue);border-bottom:2.5px solid var(--blue);transform:rotate(45deg);transition:transform .18s}
+details[open] summary::after{transform:rotate(-135deg)}
+details p{padding:0 26px 24px;font-size:15px;line-height:1.7;color:var(--ink-soft)}
+.center{text-align:center}
+.center h2,.center .lede{margin-left:auto;margin-right:auto}
+.center .cta-row{justify-content:center}
+footer{padding:48px clamp(20px,5vw,72px);background:#011d2b;color:rgba(255,255,255,.8);border-top:1px solid rgba(255,255,255,.12);font-size:14px}
+.foot{display:flex;flex-wrap:wrap;justify-content:space-between;gap:32px 64px}
+.foot-cols{display:flex;flex-wrap:wrap;gap:24px 56px}
+.foot-cols div{display:flex;flex-direction:column;gap:10px}
+.foot-cols b{color:#fff;font-weight:600}
+.foot-cols a{text-decoration:none}
+.foot-cols a:hover{color:#fff;text-decoration:underline}
+.legal{margin-top:32px;padding-top:20px;border-top:1px solid rgba(255,255,255,.12);display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px 24px;font-size:13px}
+
+.backbar{background:#011f30;padding:14px clamp(20px,5vw,72px);border-bottom:1px solid rgba(255,255,255,.12)}
+.backbar a{display:inline-flex;align-items:center;gap:8px;min-height:44px;color:#fff;font-size:14px;font-weight:600;text-decoration:none}
+.backbar a:hover{text-decoration:underline}
+.fomo{display:flex;flex-wrap:wrap;gap:36px 72px;align-items:center}
+.fomo>div{flex:1 1 380px;min-width:0}
+.fomo .big{margin-top:16px;font-size:clamp(24px,3vw,34px);line-height:1.15;font-weight:700}
+.fomo .small{margin-top:12px;font-size:15px;line-height:1.65;color:rgba(255,255,255,.84)}
+.stock{display:flex;flex-direction:column;gap:0}.stock-row{padding:18px 0;border-bottom:1px solid rgba(255,255,255,.16)}.stock-row:last-child{border-bottom:none}
+.stock-head{display:flex;justify-content:space-between;align-items:baseline;gap:12px;font-size:16px}
+.stock-text{font-size:18px;font-weight:700;color:rgba(255,255,255,.88)}
+.stock-row.low .stock-text{color:#fff}
+.bar{margin-top:10px;height:8px;border-radius:999px;background:rgba(255,255,255,.14);overflow:hidden}
+.bar i{display:block;height:100%;width:100%;border-radius:999px;background:#6fb4ee;transition:width .4s}
+.stock-row.low .bar i{background:#ff6b6f}
+.badge.low{background:#ec2227;color:#fff;border-color:transparent}
+.badge.low i{background:#fff;box-shadow:none}
+.btn[aria-disabled="true"]{opacity:.5;pointer-events:none}
+.consult{padding:0 26px 26px}
+#consult-form{margin-top:18px;display:flex;flex-direction:column;gap:14px;max-width:640px}
+.row2{display:flex;flex-wrap:wrap;gap:14px}
+.row2 label{flex:1 1 220px}
+#consult-form label{display:flex;flex-direction:column;gap:6px;font-size:13px;font-weight:600;color:var(--navy)}
+#consult-form input,#consult-form textarea{font:inherit;font-weight:400;font-size:16px;padding:12px 14px;border-radius:12px;border:1px solid rgba(1,58,86,.45);color:var(--navy);background:#fff;width:100%}
+#consult-form .btn{align-self:flex-start}
+.form-status{padding:0!important;font-size:14px!important;font-weight:600;color:var(--navy)!important}
+details .consult+p{display:none}
+
+.calc{padding:0 26px 26px}
+.seg{display:inline-flex;flex-wrap:wrap;gap:6px;padding:6px;border-radius:999px;background:rgba(54,134,199,.12)}
+.seg-btn{min-height:44px;padding:8px 18px;border-radius:999px;border:none;background:transparent;font:inherit;font-size:14px;font-weight:600;color:var(--navy);cursor:pointer}
+.seg-btn.on{background:var(--navy);color:#fff}
+.calc-grid{margin-top:22px;display:flex;flex-wrap:wrap;gap:28px 40px}
+.calc-in{flex:1 1 260px;min-width:0;display:flex;flex-direction:column;gap:10px}
+.calc-in label{display:flex;justify-content:space-between;align-items:baseline;font-size:14px;font-weight:600;color:var(--navy);margin-top:8px}
+.calc-in output{font-size:22px;font-weight:700}
+.calc-in input[type=range]{width:100%;height:32px;accent-color:#3686c7}
+.money{display:flex;align-items:center;gap:8px;padding:0 14px;border-radius:12px;border:1px solid rgba(1,58,86,.45);background:#fff;font-weight:600;color:var(--navy)}
+.money input{flex:1;min-width:0;border:none;outline:none;font:inherit;font-size:18px;font-weight:600;color:var(--navy);padding:12px 0;background:transparent}
+.money:focus-within{outline:3px solid #7fc0f5;outline-offset:2px}
+.calc-out{flex:1.4 1 320px;min-width:0;border-radius:18px;background:var(--soft-white);border:1px solid rgba(1,58,86,.1);padding:8px 20px}
+.calc-row{display:flex;justify-content:space-between;align-items:baseline;gap:16px;padding:12px 0;border-bottom:1px solid rgba(1,58,86,.1);font-size:15px;color:var(--navy)}
+.calc-row:last-child{border-bottom:none}
+.calc-row b{font-size:17px;white-space:nowrap}
+.calc-row.hero-row{font-weight:700}
+.calc-row.hero-row b{font-size:24px}
+.calc-row small{display:block;font-size:12px;font-weight:500;color:var(--ink-soft)}
+details p.calc-note,.calc-note{padding:0;margin-top:14px;font-size:13px;line-height:1.6;color:var(--ink-soft)}
+
+.plan-link{font:inherit;color:inherit;background:none;border:none;padding:0;cursor:pointer;text-align:left;text-decoration:underline;text-decoration-color:rgba(54,134,199,.6);text-underline-offset:5px}
+.plan-link:hover{text-decoration-color:currentColor}
+.more{margin-top:14px;align-self:flex-start;min-height:44px;font:inherit;font-size:14px;font-weight:600;color:var(--navy);background:none;border:none;padding:0;cursor:pointer;text-decoration:underline;text-underline-offset:4px}
+.feature .more{color:#fff}
+.textlink{font:inherit;font-weight:600;color:var(--navy);background:none;border:none;padding:0;cursor:pointer;text-decoration:underline;text-underline-offset:3px}
+.fine a{font-weight:600}
+.foot-links{display:flex;flex-wrap:wrap;gap:8px 22px}
+dialog{border:none;padding:0;border-radius:24px;width:min(720px,calc(100vw - 24px));max-height:calc(100vh - 24px);color:var(--navy);background:#fff;box-shadow:0 30px 90px rgba(0,0,0,.4)}
+dialog::backdrop{background:rgba(1,20,32,.72)}
+.dlg{position:relative;padding:clamp(24px,4vw,40px)}
+.dlg-sm{max-width:none}
+.dlg-close{position:absolute;top:14px;right:14px;width:44px;height:44px;border-radius:999px;border:1px solid rgba(1,58,86,.25);background:#fff;font-size:24px;line-height:1;color:var(--navy);cursor:pointer}
+.dlg h2{font-size:clamp(26px,4vw,34px);letter-spacing:-.02em;padding-right:48px}
+.dlg h3{margin-top:26px;font-size:17px;font-weight:700}
+.dlg p{margin-top:8px;font-size:15px;line-height:1.65;color:var(--ink-soft)}
+.dlg-eyebrow{margin:0 0 8px!important;font-size:13px!important;font-weight:600;letter-spacing:.08em;text-transform:uppercase}
+.dlg-price b{font-size:34px;color:var(--navy);letter-spacing:-.02em}
+.dlg-lede{font-size:16px!important}
+.dlg-list{margin:10px 0 0;padding:0;list-style:none;display:flex;flex-direction:column;gap:8px;font-size:15px;line-height:1.5}
+.dlg-list li{padding-left:26px;position:relative}
+.dlg-list li::before{content:"";position:absolute;left:4px;top:5px;width:6px;height:11px;border-right:2.5px solid var(--blue);border-bottom:2.5px solid var(--blue);transform:rotate(45deg)}
+.timeline{margin:14px 0 0;padding:0;list-style:none;counter-reset:t}
+.timeline li{counter-increment:t;position:relative;padding:0 0 18px 48px}
+.timeline li::before{content:counter(t);position:absolute;left:0;top:0;width:32px;height:32px;border-radius:999px;background:var(--navy);color:#fff;font-weight:700;font-size:14px;display:grid;place-items:center}
+.timeline li:not(:last-child)::after{content:"";position:absolute;left:15px;top:34px;bottom:2px;width:2px;background:rgba(54,134,199,.35)}
+.timeline b{display:block;font-size:16px}
+.timeline span{display:block;margin-top:2px;font-size:14px;line-height:1.55;color:var(--ink-soft)}
+.dlg-terms{font-size:13px!important}
+.dlg .actions{padding-top:22px}
+.dlg #consult-form{margin-top:18px;max-width:none}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.btn,.card{transition:none}}
+</style>
+</head>
+<body>
+
+<div class="backbar"><a href="https://lifeworkgps.com/"><span aria-hidden="true">&larr;</span> Back to LifeWorkGPS.com</a></div>
+
+<header class="section dark hero">
+<div class="wrap hero-grid">
+<div class="hero-copy">
+<div class="eyebrow">LifeWork for organizations</div>
+<h1>Unlimited postings.<br>Hiring at a flat monthly price.</h1>
+<p class="lede">Every paid plan includes unlimited job postings. You only choose how you want to pay for hiring.</p>
+<div class="cta-row">
+<a class="btn btn-primary" href="#plans">See the Plans</a>
+</div>
+</div>
+</div>
+</header>
+
+<main>
+<section id="plans" class="section light">
+<div class="wrap">
+<div class="eyebrow">Plans</div>
+<h2>Pick how you want to pay for hiring.</h2>
+<p class="lede">Unlimited job postings come with every paid plan. The plans differ only in how hiring is priced.</p>
+
+<div class="grid" style="margin-top:40px">
+<article class="card feature" id="plan-founders">
+<div class="badge"><i aria-hidden="true"></i><span data-badge="founders">Limited availability</span></div>
+<h3><button type="button" class="plan-link" data-details="founders">Founder's Plan</button></h3>
+<p class="for">For founding customers who want in early. Our lowest price by far, which is why we had to limit it.</p>
+<div class="price"><b>$500</b><span>per month</span></div>
+<div class="hire"><small>How hiring is priced</small>Unlimited hires in months 1 to 6. Then 25 hires a month included, and $500 for each additional hire.</div>
+<ul class="list">
+<li class="check"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#6fb4ee" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span>Unlimited job postings</span></li>
+<li class="check"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#6fb4ee" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span>Keep 15% off list prices for as long as you remain a customer</span></li>
+</ul>
+<p class="terms">6-month minimum term. The plan runs up to 12 months. For employers hiring for their own teams. Third-party recruiters, see the Pilot Plan.</p>
+<div class="actions">
+<a class="btn btn-primary" data-buy="founders" href="https://buy.stripe.com/00w28s0jTeC55VQbyqgfu0e" target="_blank" rel="noopener">Sign Up Now</a>
+<button type="button" class="btn btn-ghost" data-consult="founders">Request a Consult</button>
+</div>
+<button type="button" class="more" data-details="founders">See how it works <span aria-hidden="true">&rarr;</span></button>
+</article>
+
+<article class="card" id="plan-pilot">
+<div class="badge"><i aria-hidden="true"></i><span data-badge="pilot">Limited availability</span></div>
+<h3><button type="button" class="plan-link" data-details="pilot">Pilot Plan</button></h3>
+<p class="for">For teams hiring across several roles. One flat fee replaces per-hire math, so every employer gets a real chance to see what LifeWork can do.</p>
+<div class="price"><b>$1,000</b><span>per month</span></div>
+<div class="hire"><small>How hiring is priced</small>Unlimited hires in months 1 to 6. Then 25 hires a month included, and $1,000 for each additional hire.</div>
+<ul class="list">
+<li class="check"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#3686c7" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span>Unlimited job postings</span></li>
+<li class="check"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#3686c7" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span>Keep 15% off list prices for as long as you remain a customer</span></li>
+</ul>
+<p class="terms">6-month minimum term. The plan runs up to 12 months.</p>
+<div class="actions">
+<a class="btn btn-primary" data-buy="pilot" href="https://buy.stripe.com/28E28sd6F8dHgAubyqgfu0d" target="_blank" rel="noopener">Sign Up Now</a>
+<button type="button" class="btn btn-outline" data-consult="pilot">Request a Consult</button>
+</div>
+<button type="button" class="more" data-details="pilot">See how it works <span aria-hidden="true">&rarr;</span></button>
+</article>
+</div>
+
+<div class="grid">
+<article class="card" id="plan-hiring">
+<div class="badge quiet"><i aria-hidden="true"></i>Great for agencies</div>
+<h3><button type="button" class="plan-link" data-details="hiring">Hiring Plan</button></h3>
+<p class="for">Built for agencies and teams that place several candidates a month. Size it to your monthly placements and get better business intelligence to bring to your clients.</p>
+<div class="price sm"><b>$1,000</b><span>per month, per expected monthly hire</span></div>
+<div class="hire"><small>How hiring is priced</small>One hire a month for each $1,000. Unused hires roll forward within your plan year. Hires beyond your plan are $2,000 each.</div>
+<ul class="list">
+<li class="check"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#3686c7" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span>Unlimited job postings and job edits</span></li>
+<li class="check"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#3686c7" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span>Candidate matching and pipeline management</span></li>
+</ul>
+<div class="actions">
+<a class="btn btn-primary" href="https://buy.stripe.com/3cI7sM3w58dH83Y9qigfu0c" target="_blank" rel="noopener">Sign Up Now</a>
+<button type="button" class="btn btn-outline" data-consult="hiring">Request a Consult</button>
+</div>
+<button type="button" class="more" data-details="hiring">See how it works <span aria-hidden="true">&rarr;</span></button>
+</article>
+
+<article class="card" id="plan-single">
+<div class="badge quiet"><i aria-hidden="true"></i>No contract</div>
+<h3><button type="button" class="plan-link" data-details="single">Single Role</button></h3>
+<p class="for">For one hire, with no monthly plan. Bring the resumes you already have.</p>
+<div class="price sm"><b>$1,000</b><span>one time, for one hire</span></div>
+<div class="hire"><small>How hiring is priced</small>Covers one hire. Each hire after that is a flat $3,000. Hiring more than once? A monthly plan costs less.</div>
+<ul class="list">
+<li class="check"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#3686c7" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span>Bring the resumes you already have</span></li>
+<li class="check"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#3686c7" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span>Invite each candidate to complete a LifeWork profile and apply</span></li>
+<li class="check"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#3686c7" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span>We help you identify your top candidates</span></li>
+</ul>
+<div class="actions">
+<a class="btn btn-primary" href="https://buy.stripe.com/4gM00k4A979DdoidGygfu0f" target="_blank" rel="noopener">Sign Up Now</a>
+<button type="button" class="btn btn-outline" data-consult="single">Request a Consult</button>
+</div>
+<button type="button" class="more" data-details="single">See how it works <span aria-hidden="true">&rarr;</span></button>
+</article>
+</div>
+<p class="fine">After checkout, our Customer Experience team emails you within one business day to schedule your onboarding call. Prices are in US dollars and do not include applicable tax. See our <a href="https://lifeworkgps.com/privacy" target="_blank" rel="noopener">Privacy Policy</a> and <a href="https://lifeworkgps.com/terms" target="_blank" rel="noopener">Terms &amp; Conditions</a>.</p>
+</div>
+</section>
+
+<section id="availability" class="section dark" style="padding-top:clamp(48px,6vw,80px);padding-bottom:clamp(48px,6vw,80px)">
+<div class="wrap fomo">
+<div>
+<div class="tag"><span class="dot" aria-hidden="true"></span>Limited pilot pricing</div>
+<p class="big">Good through December 31, 2026</p>
+<p class="small">New pricing takes effect January 1, 2027. Sign up now to lock in the pilot rate.</p>
+<div class="days" id="days" hidden></div>
+</div>
+<div class="stock">
+<div class="stock-row" data-stock="founders"><div class="stock-head"><b>Founder's Plan</b><span class="stock-text">Limited availability</span></div></div>
+<div class="stock-row" data-stock="pilot"><div class="stock-head"><b>Pilot Plan</b><span class="stock-text">Limited availability</span></div></div>
+</div>
+</div>
+</section>
+
+<section id="compare" class="section white">
+<div class="wrap">
+<div class="eyebrow">Compare</div>
+<h2>Same postings. Different hiring math.</h2>
+<p class="lede">The more you hire, the more a monthly plan saves you.</p>
+<div class="table-box">
+<table>
+<thead><tr><th scope="col">Plan</th><th scope="col">Price</th><th scope="col">Postings</th><th scope="col">Hiring included</th><th scope="col">Beyond that</th></tr></thead>
+<tbody>
+<tr><th scope="row">Founder's Plan<small>Limited availability</small></th><td class="strong">$500<small>per month</small></td><td>Unlimited</td><td>Unlimited hires in months 1 to 6, then 25 a month</td><td>$500 per hire</td></tr>
+<tr><th scope="row">Pilot Plan<small>Limited availability</small></th><td class="strong">$1,000<small>per month</small></td><td>Unlimited</td><td>Unlimited hires in months 1 to 6, then 25 a month</td><td>$1,000 per hire</td></tr>
+<tr class="list-row"><th scope="row">Hiring Plan<small>Great for agencies</small></th><td class="strong">$1,000<small>per month, per expected hire</small></td><td>Unlimited</td><td>One hire a month for each $1,000</td><td>$2,000 per hire</td></tr>
+<tr><th scope="row">Single Role<small>No contract</small></th><td class="strong">$1,000<small>one time</small></td><td>Unlimited</td><td>One hire</td><td>$3,000 per hire</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+
+<section id="faq" class="section light">
+<div class="wrap">
+<div class="eyebrow">Questions</div>
+<h2>Questions.</h2>
+<div class="faq">
+<details id="calculator"><summary>Run the numbers for your team</summary>
+<div class="calc">
+<div class="seg" role="group" aria-label="Who are you hiring for?">
+<button type="button" class="seg-btn on" data-mode="internal" aria-pressed="true">Internal hiring team</button>
+<button type="button" class="seg-btn" data-mode="agency" aria-pressed="false">Third-party recruiter</button>
+</div>
+<div class="calc-grid">
+<div class="calc-in">
+<label for="c-hires"><span id="c-hires-label">Hires per month</span><output id="c-hires-out">5</output></label>
+<input id="c-hires" type="range" min="1" max="40" step="1" value="5">
+<label for="c-cost" id="c-cost-label">Your current cost per hire</label>
+<div class="money"><span aria-hidden="true">$</span><input id="c-cost" type="number" inputmode="numeric" min="0" step="100" value="5000"></div>
+<p class="calc-note" id="c-note"></p>
+</div>
+<div class="calc-out" id="c-out" aria-live="polite"></div>
+</div>
+<p class="calc-note">Estimates only, over a 12-month term at published pilot pricing. Tax not included.</p>
+</div>
+</details>
+<details><summary>How long is pilot pricing available?</summary><p>Through December 31, 2026, or until a limited plan is full, whichever comes first. New pricing takes effect January 1, 2027.</p></details>
+<details><summary>What does unlimited hiring mean on the Founder's and Pilot plans?</summary><p>Unlimited hires in months 1 to 6. Months 7 to 12 include 25 hires a month. Past that, each additional hire is $500 on the Founder's Plan or $1,000 on the Pilot Plan. Both plans have a 6-month minimum term and run up to 12 months.</p></details>
+<details><summary>What happens when my pilot plan ends?</summary><p>You choose a standard LifeWork plan. Founder's and Pilot customers keep 15% off list prices for as long as they remain customers.</p></details>
+<details id="test-first"><summary>Can I test it before committing?</summary><p>Yes. Request a consult and a customer care teammate will walk you through options for trying LifeWork with your team first.</p>
+<div class="consult"><button class="btn btn-primary" type="button" data-consult="test">Request a Consult</button></div>
+</details>
+<details><summary>Do you support evergreen roles?</summary><p>Yes. Evergreen roles are the ones you are always hiring for, where you keep a pipeline of candidates warm instead of paying per hire. They are set up with a customer success teammate, so reach out and we will walk you through it.</p></details>
+</div>
+<p class="fine" style="font-size:15px">Not sure which plan fits? <button type="button" class="textlink" data-consult="notsure">Talk to a customer success teammate</button> to find options that work for your team, or email sales@lifework.live.</p>
+</div>
+</section>
+
+</main>
+
+<footer>
+<div class="wrap legal" style="margin-top:0;padding-top:0;border-top:none"><span>&copy; 2026 LifeWork. All rights reserved.</span><span class="foot-links"><a href="https://lifeworkgps.com/privacy" target="_blank" rel="noopener">Privacy Policy</a><a href="https://lifeworkgps.com/terms" target="_blank" rel="noopener">Terms &amp; Conditions</a><a href="https://lifeworkgps.com/">Back to LifeWorkGPS.com</a></span></div>
+</footer>
+
+<dialog id="plan-dialog" aria-labelledby="pd-title">
+<div class="dlg">
+<button type="button" class="dlg-close" data-close aria-label="Close">&times;</button>
+<p class="dlg-eyebrow" id="pd-tag"></p>
+<h2 id="pd-title"></h2>
+<p class="dlg-price"><b id="pd-price"></b> <span id="pd-unit"></span></p>
+<p class="dlg-lede" id="pd-lede"></p>
+<h3>How hiring is priced</h3>
+<p id="pd-hiring"></p>
+<h3>What you get</h3>
+<ul class="dlg-list" id="pd-gets"></ul>
+<h3>What happens after you sign up</h3>
+<p>Every pilot offer comes with white glove onboarding. You are never left to figure it out alone.</p>
+<ol class="timeline">
+<li><b>Sign up</b><span>Check out securely through Stripe.</span></li>
+<li><b>Customer success meeting</b><span>We reach out within one business day to schedule it, then walk through your complete setup together.</span></li>
+<li><b>Your first role goes live</b><span>Within a few hours of that first call. Often we get it live together during the meeting itself.</span></li>
+<li><b>Craft your postings with us</b><span>Our team and in-house recruiters work with you to shape each posting so it attracts the right people.</span></li>
+<li><b>Help when you need it</b><span>Our support team stays with you for questions, changes and anything that comes up.</span></li>
+</ol>
+<p class="dlg-terms" id="pd-terms"></p>
+<div class="actions">
+<a class="btn btn-primary" id="pd-buy" target="_blank" rel="noopener">Sign Up Now</a>
+<button type="button" class="btn btn-outline" id="pd-consult">Request a Consult</button>
+</div>
+</div>
+</dialog>
+
+<dialog id="consult-dialog" aria-labelledby="cd-title">
+<div class="dlg dlg-sm">
+<button type="button" class="dlg-close" data-close aria-label="Close">&times;</button>
+<h2 id="cd-title">Request a consult</h2>
+<p class="dlg-lede">Tell us a little about your team. A customer success teammate will reach out within one business day.</p>
+<form id="consult-form" novalidate>
+<div class="row2"><label>First name<input name="firstname" autocomplete="given-name" required></label><label>Last name<input name="lastname" autocomplete="family-name" required></label></div>
+<div class="row2"><label>Work email<input name="email" type="email" autocomplete="email" required></label><label>Company<input name="company" autocomplete="organization"></label></div>
+<label>How can we help?<textarea name="message" rows="3"></textarea></label>
+<button class="btn btn-primary" type="submit">Send Request</button>
+<p class="form-status" id="consult-status" role="status" aria-live="polite"></p>
+</form>
+</div>
+</dialog>
+
+<script>
+(function(){
+  /* ---------- CONFIG ---------- */
+  // Set to the deployed inventory endpoint (see plan-inventory-route.js). Leave '' to use the fallback numbers.
+  var INVENTORY_URL = '';
+  var LOW_STOCK = 5;            // badge turns red below this
+  // Used only until INVENTORY_URL is set. These match Stripe as of Nov 16, 2026.
+  var PLANS = {founders:{fallbackRemaining:9}, pilot:{fallbackRemaining:17}};
+  // Same HubSpot form the m1.lifeworkgps.com page submits to
+  var HS = {api:'https://api-na2.hsforms.com', portalId:'243282704', formGuid:'1d3d1c28-73c0-4d2f-8612-b3231dd5e1c5'};
+  var CARE_EMAIL = 'sales@lifework.live';
+
+  /* ---------- in-page links ---------- */
+  document.addEventListener('click',function(e){
+    var a=e.target.closest('a[href^="#"]');if(!a)return;
+    var el=document.getElementById(a.getAttribute('href').slice(1));if(!el)return;
+    e.preventDefault();el.scrollIntoView({behavior:'smooth',block:'start'});
+  });
+
+  /* ---------- days left ---------- */
+  var d=Math.ceil((new Date(2027,0,1)-new Date())/864e5),box=document.getElementById('days');
+  if(d>0){box.textContent=d+(d===1?' day':' days')+' left at pilot pricing';box.hidden=false;}
+
+  /* ---------- live inventory from Stripe ---------- */
+  function paint(key,remaining){
+    var row=document.querySelector('[data-stock="'+key+'"]'),badge=document.querySelector('[data-badge="'+key+'"]'),buy=document.querySelector('[data-buy="'+key+'"]');
+    var text=remaining===null?'Limited availability':remaining<=0?'Plan is full':'Only '+remaining+(remaining===1?' slot remains':' slots remain');
+    var low=remaining!==null&&remaining<LOW_STOCK;
+    row.querySelector('.stock-text').textContent=text;
+    badge.textContent=text;
+    row.classList.toggle('low',low);badge.parentNode.classList.toggle('low',low);
+    if(remaining!==null&&remaining<=0){buy.textContent='Plan Full';buy.setAttribute('aria-disabled','true');buy.removeAttribute('href');}
+  }
+  // No feed configured yet: show the last known Stripe numbers. Feed configured: show only what Stripe returns.
+  Object.keys(PLANS).forEach(function(k){paint(k,INVENTORY_URL?null:PLANS[k].fallbackRemaining);});
+  if(INVENTORY_URL){
+
+    fetch(INVENTORY_URL,{cache:'no-store'}).then(function(r){if(!r.ok)throw 0;return r.json();}).then(function(data){
+      Object.keys(PLANS).forEach(function(k){if(data[k]&&typeof data[k].remaining==='number')paint(k,data[k].remaining);});
+    }).catch(function(){/* feed unavailable: keep the generic label, never a stale number */});
+  }
+
+  /* ---------- dialogs ---------- */
+  function openDlg(d){if(d.showModal){try{d.showModal();}catch(e){d.setAttribute('open','');}}else d.setAttribute('open','');}
+  function closeDlg(d){if(d.close)d.close();else d.removeAttribute('open');}
+  document.querySelectorAll('dialog').forEach(function(d){
+    d.addEventListener('click',function(e){if(e.target===d||e.target.closest('[data-close]'))closeDlg(d);});
+  });
+
+  /* ---------- plan details ---------- */
+  var DETAILS={
+    founders:{tag:'Limited availability',name:"Founder's Plan",price:'$500',unit:'per month',
+      lede:'Our lowest price, for founding customers who want in early and want a hand in shaping what we build.',
+      hiring:'Unlimited hires in months 1 to 6. In months 7 to 12, 25 hires a month are included and each additional hire is $500.',
+      gets:['Unlimited job postings','Unlimited hires for the first six months','White glove onboarding with a customer success teammate','Help crafting each posting from our team and in-house recruiters','15% off list prices for as long as you remain a customer'],
+      terms:'6-month minimum term. The plan runs up to 12 months. For employers hiring for their own teams. Prices do not include applicable tax.'},
+    pilot:{tag:'Limited availability',name:'Pilot Plan',price:'$1,000',unit:'per month',
+      lede:'One flat fee for teams hiring across several roles, and the pilot plan open to third-party recruiters.',
+      hiring:'Unlimited hires in months 1 to 6. In months 7 to 12, 25 hires a month are included and each additional hire is $1,000.',
+      gets:['Unlimited job postings','Unlimited hires for the first six months','White glove onboarding with a customer success teammate','Help crafting each posting from our team and in-house recruiters','15% off list prices for as long as you remain a customer'],
+      terms:'6-month minimum term. The plan runs up to 12 months. Prices do not include applicable tax.'},
+    hiring:{tag:'Great for agencies',name:'Hiring Plan',price:'$1,000',unit:'per month, per expected monthly hire',
+      lede:'Built for agencies and teams that place several candidates a month, with better business intelligence to bring to your clients.',
+      hiring:'Each $1,000 a month includes one hire a month. Unused hires roll forward within your plan year. Hires beyond your plan are $2,000 each.',
+      gets:['Unlimited job postings and job edits','Candidate matching and pipeline management','White glove onboarding with a customer success teammate','Help crafting each posting from our team and in-house recruiters'],
+      terms:'Billed monthly. Set the quantity at checkout to the number of hires you expect each month. Prices do not include applicable tax.'},
+    single:{tag:'No contract',name:'Single Role',price:'$1,000',unit:'one time, for one hire',
+      lede:'For one hire with no monthly plan. Bring the resumes you already have and we help you find your top candidates.',
+      hiring:'One payment covers one hire. Each hire after that is a flat $3,000. If you expect to hire more than once, a monthly plan costs less.',
+      gets:['Your role posted on LifeWork','Invite your candidates to complete a LifeWork profile and apply','Help identifying your top candidates','White glove onboarding with a customer success teammate'],
+      terms:'One-time payment. Prices do not include applicable tax.'}
+  };
+  var pd=document.getElementById('plan-dialog'),cd=document.getElementById('consult-dialog'),currentPlan='';
+  function showPlan(key){
+    var p=DETAILS[key];if(!p)return;currentPlan=key;
+    document.getElementById('pd-tag').textContent=p.tag;document.getElementById('pd-title').textContent=p.name;
+    document.getElementById('pd-price').textContent=p.price;document.getElementById('pd-unit').textContent=p.unit;
+    document.getElementById('pd-lede').textContent=p.lede;document.getElementById('pd-hiring').textContent=p.hiring;
+    document.getElementById('pd-terms').textContent=p.terms;
+    var ul=document.getElementById('pd-gets');ul.textContent='';
+    p.gets.forEach(function(g){var li=document.createElement('li');li.textContent=g;ul.appendChild(li);});
+    // mirror the card's sign-up button (link, or "Plan Full")
+    var cardBuy=document.querySelector('#plan-'+key+' .actions a.btn-primary'),buy=document.getElementById('pd-buy');
+    buy.textContent=cardBuy.textContent;
+    if(cardBuy.getAttribute('href')){buy.href=cardBuy.href;buy.removeAttribute('aria-disabled');}else{buy.removeAttribute('href');buy.setAttribute('aria-disabled','true');}
+    openDlg(pd);pd.scrollTop=0;
+  }
+  document.addEventListener('click',function(e){
+    var d=e.target.closest('[data-details]');if(d){showPlan(d.dataset.details);return;}
+    var c=e.target.closest('[data-consult]');if(c){openConsult(c.dataset.consult);}
+  });
+  document.getElementById('pd-consult').addEventListener('click',function(){closeDlg(pd);openConsult(currentPlan);});
+
+  /* ---------- consult request (HubSpot) ---------- */
+  var form=document.getElementById('consult-form'),status=document.getElementById('consult-status'),consultSource='';
+  var SOURCES={founders:"Founder's Plan",pilot:'Pilot Plan',hiring:'Hiring Plan',single:'Single Role',test:'Test before committing',notsure:'Not sure which plan'};
+  function openConsult(src){
+    consultSource=SOURCES[src]||'General';status.textContent='';
+    var btn=form.querySelector('button[type=submit]');btn.hidden=false;btn.disabled=false;
+    openDlg(cd);form.firstname.focus();
+  }
+  form.addEventListener('submit',function(e){
+    e.preventDefault();
+    if(!form.firstname.value.trim()||!form.lastname.value.trim()||!/^\S+@\S+\.\S+$/.test(form.email.value.trim())){status.textContent='Please add your first name, last name and a valid email.';return;}
+    var btn=form.querySelector('button[type=submit]');btn.disabled=true;status.textContent='Sending...';
+    var body={fields:[
+      {name:'firstname',value:form.firstname.value.trim()},{name:'lastname',value:form.lastname.value.trim()},
+      {name:'email',value:form.email.value.trim()},{name:'company',value:form.company.value.trim()},
+      {name:'message',value:'[Pilot pricing page: '+consultSource+'] '+form.message.value.trim()}],
+      context:{pageUri:location.href,pageName:document.title}};
+    fetch(HS.api+'/submissions/v3/integration/submit/'+HS.portalId+'/'+HS.formGuid,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(body)})
+      .then(function(r){if(!r.ok)throw 0;form.reset();btn.hidden=true;status.textContent='Thanks. A customer success teammate will reach out within one business day.';})
+      .catch(function(){btn.disabled=false;status.textContent='We could not send that from this page. Please email '+CARE_EMAIL+' and we will get right back to you.';});
+  });
+
+  /* ---------- calculator ---------- */
+  (function(){
+    var mode='internal',hires=document.getElementById('c-hires'),cost=document.getElementById('c-cost'),out=document.getElementById('c-out');
+    var $=function(n){return (n<0?'-$':'$')+Math.abs(Math.round(n)).toLocaleString('en-US');};
+    // 12-month cost: unlimited hires in months 1 to 6, then 25 a month included and a per-hire fee beyond that
+    function plan(base,h){return 12*base+6*Math.max(0,h-25)*base;}
+    function row(label,val,sub,cls){return '<div class="calc-row '+(cls||'')+'"><span>'+label+(sub?'<small>'+sub+'</small>':'')+'</span><b>'+val+'</b></div>';}
+    function render(){
+      var h=+hires.value,c=Math.max(0,+cost.value||0),n=12*h,html='';
+      document.getElementById('c-hires-out').textContent=h;
+      var pilot=plan(1000,h),list=12*h*1000;
+      if(mode==='internal'){
+        var now=n*c,founders=plan(500,h),save=now-founders;
+        html+=row('Your current hiring cost',$(now),n+' hires over 12 months');
+        html+=row("Founder's Plan",$(founders),$(founders/n)+' per hire');
+        html+=row('Pilot Plan',$(pilot),$(pilot/n)+' per hire');
+        html+=row('Hiring Plan at list price',$(list),'$1,000 per hire');
+        html+=save>=0?row("You keep with the Founder's Plan",$(save),'compared with your current cost','hero-row'):row('At these numbers LifeWork costs more',$(-save),'compared with your current cost','hero-row');
+        document.getElementById('c-note').textContent='';
+      }else{
+        var rev=n*c;
+        html+=row('Placement revenue',$(rev),n+' placements over 12 months');
+        html+=row('Pilot Plan',$(pilot),'12 months');
+        html+=row('Same volume at list price',$(list),'Hiring Plan, $1,000 per placement');
+        html+=row('Share of your revenue',rev>0?(pilot/rev*100).toFixed(1)+'%':'n/a','Pilot Plan cost as a share of placement fees');
+        html+=row('LifeWork cost per placement',$(pilot/n),'on the Pilot Plan','hero-row');
+        document.getElementById('c-note').textContent="Third-party recruiters are eligible for the Pilot Plan. The Founder's Plan is for employers hiring for their own teams.";
+      }
+      out.innerHTML=html;
+    }
+    document.querySelectorAll('.seg-btn').forEach(function(b){b.addEventListener('click',function(){
+      mode=b.dataset.mode;
+      document.querySelectorAll('.seg-btn').forEach(function(x){var on=x===b;x.classList.toggle('on',on);x.setAttribute('aria-pressed',on?'true':'false');});
+      document.getElementById('c-hires-label').textContent=mode==='internal'?'Hires per month':'Placements per month';
+      document.getElementById('c-cost-label').textContent=mode==='internal'?'Your current cost per hire':'Your average fee per placement';
+      cost.value=mode==='internal'?5000:15000;render();
+    });});
+    hires.addEventListener('input',render);cost.addEventListener('input',render);render();
+  })();
+})();
+</script>
+</body>
+</html>
