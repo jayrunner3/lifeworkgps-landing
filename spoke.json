@@ -1,0 +1,23 @@
+{
+  "$schema": "https://github.com/Lifework-Lab/Spoke-SpokeHealth/blob/main/schema/spoke.schema.json",
+  "manifestVersion": "0.2",
+  "id": "lifeworkgps-tech",
+  "name": "lifeworkgps.tech compass",
+  "role": "page",
+  "summary": "The lifeworkgps.tech switchboard: a compass that routes people to Explore, Mentor, Outfitters, Careers and VetNav. Signed out, every link opens its public page; signed in, the hub's navigation sends each link to the signed-in destination.",
+  "owner": { "name": "Jay", "github": "jayrunner3" },
+  "repo": { "local": "lifeworkgps-tech", "github": "jayrunner3/lifeworkgps-landing", "defaultBranch": "main" },
+  "hubReference": { "version": "ref-v0.1", "checked": "2026-11-08" },
+  "seam": {
+    "hubConfig": "config/hub.js",
+    "features": "_dev/features.js"
+  },
+  "slots": {
+    "identity.current":    { "capabilities": ["identity"], "kind": "endpoint", "status": "placeholder", "required": true,
+                             "notes": "Header sign-in, signed-in name and initials, sign out. Until wired, the existing Sign in link stays exactly as it is." },
+    "endpoint.navigation": { "capabilities": ["navigation"], "kind": "endpoint", "status": "placeholder", "required": false,
+                             "notes": "Signed-in destination per data-dest key: explore, mentor, mentor.get-coaching, mentor.become-a-coach, outfitters, outfitters.provider, careers, careers.employer, vetnav, vetnav.provider." }
+  },
+  "deploy": { "target": "github-pages", "domain": "lifeworkgps.tech", "environments": ["prod"] },
+  "updated": "2026-11-08"
+}

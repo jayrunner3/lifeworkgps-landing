@@ -1,0 +1,5 @@
+# GitHub Pages (Jekyll) settings. The page itself is plain HTML and is copied as it is.
+# Engineering files stay out of the public site: _dev/ (a leading "_" is never published) and these.
+exclude:
+  - spoke.json
+  - README.md
